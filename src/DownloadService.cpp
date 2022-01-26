@@ -53,7 +53,7 @@ static void turnNovacomOn(LSHandle * lshandle);
 ///////// --------------------------------------------------------------------------- LUNA BUS FUNCTIONS ----------------------------------------
 
 static LSMethod s_methods[]  = {
-    { "deleteDownloadedFile",       DownloadManager::cbDeleteDownloadedFile},
+    { "deleteDownloadedFile",       DownloadManager::cbDeleteDownloadedFile },
     { "downloadStatusQuery",        DownloadManager::cbDownloadStatusQuery },
     { "download",                   DownloadManager::cbDownload },
     { "resumeDownload",             DownloadManager::cbResumeDownload },
@@ -65,7 +65,8 @@ static LSMethod s_methods[]  = {
     { "getAllHistory",              DownloadManager::cbGetAllHistory },
     { "clearHistory",               DownloadManager::cbClearDownloadHistory },
     { "upload",                     DownloadManager::cbUpload },
-    { "is1xMode",                   DownloadManager::cbConnectionType},
+    { "is1xMode",                   DownloadManager::cbConnectionType },
+    { "filesystemStatusCheck",      DownloadManager::filesystemStatusCheck },
     { "allow1x",                    cbAllow1x },
     { 0, 0 },
 };
